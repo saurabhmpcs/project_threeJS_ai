@@ -26,7 +26,6 @@ const Shirt = () => {
         geometry={nodes.T_Shirt_male.geometry}
         material={materials.lambert1}
         material-roughness={1}
-        dispose={null}
       >
         {snap.isFullTexture && (
           <Decal
@@ -43,7 +42,6 @@ const Shirt = () => {
             rotation={[0, 0, 0]}
             scale={0.15}
             map={logoTexture}
-            anisotropy={15}
             depthTest={false}
             depthWrite={true}
           />

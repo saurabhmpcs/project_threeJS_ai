@@ -1,13 +1,14 @@
 import React from "react";
 
 import CustomButton from "./CustomButton";
+
 const FilePicker = ({ file, setFile, readFile }) => {
   return (
     <div className="filepicker-container">
       <div className="flex-1 flex flex-col">
         <input
-          type="file"
           id="file-upload"
+          type="file"
           accept="image/*"
           onChange={(e) => setFile(e.target.files[0])}
         />
@@ -25,13 +26,13 @@ const FilePicker = ({ file, setFile, readFile }) => {
           type="outline"
           title="Logo"
           handleClick={() => readFile("logo")}
-          customStyle="text-xs"
+          customStyles="text-xs"
         />
         <CustomButton
           type="filled"
           title="Full"
           handleClick={() => readFile("full")}
-          customStyle="text-xs"
+          customStyles="text-xs"
         />
       </div>
     </div>
